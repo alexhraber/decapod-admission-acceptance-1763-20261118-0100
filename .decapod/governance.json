@@ -139,6 +139,11 @@
       "id": "retain-exact-a62-runtime-negative-source",
       "summary": "Scripted lineage fixture; these records do not grant human consent or publication readiness",
       "input_digest": "sha256:c13cb83c6e2ef19f2607dda36fae954bca5a782090601ad7da6f71e9c0f7c9dd"
+    },
+    {
+      "id": "repair-exact-a62-runtime-without-repinning-policy",
+      "summary": "Scripted lineage fixture; these records do not grant human consent or publication readiness",
+      "input_digest": "sha256:b9de2ff290e11b6c516d317941c2899255db268402e900d073aca608658c2717"
     }
   ],
   "intents": {
@@ -226,21 +231,21 @@
           "disposition": "updated",
           "path": ".decapod/managed/specs/ARCHITECTURE.md",
           "reason": "Current measured candidate and real required negative/repair execution; preserve provenance, earlier failures and no human/merge grant",
-          "reviewed_code_fingerprint": "12cecd65977b1a5063def3b3ff0a19ded94d1552be887de8a0ddcc3fda7662ec",
+          "reviewed_code_fingerprint": "bc45054e56b20fedb9dd1cce8dbc4f2ea082adc9d748883372256a90c864940e",
           "spec_material_hash": "51a26b2089d2feaa71668df4c9013ffe8aaf93b34aa8164011e75a56d5b2d020"
         },
         {
           "disposition": "updated",
           "path": ".decapod/managed/specs/INTERFACES.md",
           "reason": "Current measured candidate and real required negative/repair execution; preserve provenance, earlier failures and no human/merge grant",
-          "reviewed_code_fingerprint": "12cecd65977b1a5063def3b3ff0a19ded94d1552be887de8a0ddcc3fda7662ec",
+          "reviewed_code_fingerprint": "bc45054e56b20fedb9dd1cce8dbc4f2ea082adc9d748883372256a90c864940e",
           "spec_material_hash": "d25d45b05543549f1493a00756be7cfbea767e711e1ddca3983aabbd38b00df5"
         },
         {
           "disposition": "updated",
           "path": ".decapod/managed/specs/SECURITY.md",
           "reason": "Current measured candidate and real required negative/repair execution; preserve provenance, earlier failures and no human/merge grant",
-          "reviewed_code_fingerprint": "12cecd65977b1a5063def3b3ff0a19ded94d1552be887de8a0ddcc3fda7662ec",
+          "reviewed_code_fingerprint": "bc45054e56b20fedb9dd1cce8dbc4f2ea082adc9d748883372256a90c864940e",
           "spec_material_hash": "9bad2facc72710a48be9298757f1a9303f187c427d010cfd0ed0d01c9f4c88be"
         }
       ],
@@ -252,7 +257,7 @@
       ],
       "unknowns": [],
       "unresolved_contradictions": [],
-      "updated_at": "1794990685Z"
+      "updated_at": "1794991044Z"
     },
     "trajectory": {
       "active_boundaries": [
