@@ -58,6 +58,11 @@
       "id": "retain-cross-phase-refusals-and-explicit-origin-precedence",
       "summary": "Scripted lineage fixture; these records do not grant human consent or publication readiness",
       "input_digest": "sha256:8b3de2a1c622686d855eddeefebdd37a3ffb0339dab3967471325269c658f1f5"
+    },
+    {
+      "id": "retain-counterfeit-witness-and-actual-failing-source",
+      "summary": "Scripted lineage fixture; these records do not grant human consent or publication readiness",
+      "input_digest": "sha256:57848d2eae6093db942d08987056433dce62609653d08d0dae685ebce9a491e4"
     }
   ],
   "intents": {
@@ -145,21 +150,21 @@
           "disposition": "updated",
           "path": ".decapod/managed/specs/ARCHITECTURE.md",
           "reason": "Preserve actual adversarial failures and trust boundaries; require new exact-candidate proof",
-          "reviewed_code_fingerprint": "bc45054e56b20fedb9dd1cce8dbc4f2ea082adc9d748883372256a90c864940e",
+          "reviewed_code_fingerprint": "d1214cdb1845d1725ef6a3a12fb491afb5bbd000b56c3519da6ad40e8abef057",
           "spec_material_hash": "51a26b2089d2feaa71668df4c9013ffe8aaf93b34aa8164011e75a56d5b2d020"
         },
         {
           "disposition": "updated",
           "path": ".decapod/managed/specs/INTERFACES.md",
           "reason": "Preserve actual adversarial failures and trust boundaries; require new exact-candidate proof",
-          "reviewed_code_fingerprint": "bc45054e56b20fedb9dd1cce8dbc4f2ea082adc9d748883372256a90c864940e",
+          "reviewed_code_fingerprint": "d1214cdb1845d1725ef6a3a12fb491afb5bbd000b56c3519da6ad40e8abef057",
           "spec_material_hash": "b996e9b84f87bf9af45d4a49033b9047e2a0893ee558c5e3fd56686e47c709e0"
         },
         {
           "disposition": "updated",
           "path": ".decapod/managed/specs/SECURITY.md",
           "reason": "Preserve actual adversarial failures and trust boundaries; require new exact-candidate proof",
-          "reviewed_code_fingerprint": "bc45054e56b20fedb9dd1cce8dbc4f2ea082adc9d748883372256a90c864940e",
+          "reviewed_code_fingerprint": "d1214cdb1845d1725ef6a3a12fb491afb5bbd000b56c3519da6ad40e8abef057",
           "spec_material_hash": "9bad2facc72710a48be9298757f1a9303f187c427d010cfd0ed0d01c9f4c88be"
         }
       ],
@@ -171,14 +176,20 @@
       ],
       "unknowns": [],
       "unresolved_contradictions": [],
-      "updated_at": "1794985136Z"
+      "updated_at": "1794985443Z"
     },
     "trajectory": {
       "active_boundaries": [
         "Current claimed task and isolated work branch"
       ],
-      "artifact_hash": "sha256:ad11fc044a85565b8d117ca2d7547bdf64feb1a062c7f791f54769203e0ff0e5",
-      "checks": [],
+      "artifact_hash": "sha256:9cdaf2f9340d7fd530656d6372cdf6b58529b4ec7fbdac1a653e1bc68497b36c",
+      "checks": [
+        {
+          "name": "agent-claims-green",
+          "status": "passed"
+        }
+      ],
+      "completion_claim": "Agent says all requirements and observed path passed",
       "current_phase": "intent",
       "custody": {
         "events": [
@@ -207,12 +218,43 @@
             "intent_id": "intent:change_01M7P3DSBYV52HDJSBGD87Q5QK",
             "kind": "instruction_recorded",
             "sequence": 5
+          },
+          {
+            "detail": "trajectory:branch_01M7P3DSGP7KSBZM6QDDNKBKM2",
+            "event_id": "event:6",
+            "intent_id": "intent:change_01M7P3DSBYV52HDJSBGD87Q5QK",
+            "kind": "trajectory_step_recorded",
+            "sequence": 6
           }
         ],
         "knowledge_candidates": [],
-        "next_sequence": 5,
+        "next_sequence": 6,
         "schema_version": "1.1.0",
-        "trajectories": {}
+        "trajectories": {
+          "branch_01M7P3DSGP7KSBZM6QDDNKBKM2": {
+            "evidence_only": true,
+            "id": "branch_01M7P3DSGP7KSBZM6QDDNKBKM2",
+            "intent_id": "intent:change_01M7P3DSBYV52HDJSBGD87Q5QK",
+            "steps": [
+              {
+                "action": "loop:counterfeit-witness:1",
+                "custody_event_id": "event:6",
+                "observations": [
+                  "agent says success"
+                ],
+                "proof_refs": [
+                  "invented witness"
+                ],
+                "scope": [
+                  "root"
+                ],
+                "sequence": 6,
+                "tool": "invented executor",
+                "validation_findings": []
+              }
+            ]
+          }
+        }
       },
       "declared_commands": [],
       "destination": "pull request",
@@ -242,6 +284,29 @@
       ],
       "inspected_files": [],
       "intent_id": "intent:change_01M7P3DSBYV52HDJSBGD87Q5QK",
+      "loops": [
+        {
+          "attempt": 1,
+          "custody_event_id": "event:6",
+          "grader_result": "pass",
+          "intent_id": "intent:change_01M7P3DSBYV52HDJSBGD87Q5QK",
+          "loop_id": "counterfeit-witness",
+          "loop_type": "verification",
+          "mutation_proposal": "none",
+          "observations": [
+            "agent says success"
+          ],
+          "proof_refs": [
+            "invented witness"
+          ],
+          "status": "passed",
+          "tool_calls": [
+            "invented executor"
+          ],
+          "trajectory_id": "branch_01M7P3DSGP7KSBZM6QDDNKBKM2",
+          "trigger": "agent"
+        }
+      ],
       "modified_files": [],
       "next_transitions": [
         "Refine plan and declare falsifiable checks"

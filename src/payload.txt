@@ -1,1 +1,1 @@
-ready
+invalid current candidate despite claimed pass
