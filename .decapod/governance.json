@@ -43,6 +43,11 @@
       "id": "repair-postcreation-source-and-projections",
       "summary": "Scripted lineage fixture; these records do not grant human consent or publication readiness",
       "input_digest": "sha256:456884e0976e8ba0cac5bfc4463e42d5c52dfdde8c4224a416b71da9691352c3"
+    },
+    {
+      "id": "incorporate-current-disposable-accepted-base",
+      "summary": "Scripted lineage fixture; these records do not grant human consent or publication readiness",
+      "input_digest": "sha256:e51911f23acd5142cb93612e606e952988078a4babcd8b4af3f7f71df008212e"
     }
   ],
   "intents": {
@@ -86,21 +91,21 @@
         {
           "disposition": "updated",
           "path": ".decapod/managed/specs/ARCHITECTURE.md",
-          "reason": "Current literal source and scoped native-path authority; preserve historical failure evidence and no merge authority",
+          "reason": "Recover through actual task authority and exact accepted base; historical failures and revoked custody remain auditable",
           "reviewed_code_fingerprint": "bc45054e56b20fedb9dd1cce8dbc4f2ea082adc9d748883372256a90c864940e",
           "spec_material_hash": "51a26b2089d2feaa71668df4c9013ffe8aaf93b34aa8164011e75a56d5b2d020"
         },
         {
           "disposition": "updated",
           "path": ".decapod/managed/specs/INTERFACES.md",
-          "reason": "Current literal source and scoped native-path authority; preserve historical failure evidence and no merge authority",
+          "reason": "Recover through actual task authority and exact accepted base; historical failures and revoked custody remain auditable",
           "reviewed_code_fingerprint": "bc45054e56b20fedb9dd1cce8dbc4f2ea082adc9d748883372256a90c864940e",
           "spec_material_hash": "b996e9b84f87bf9af45d4a49033b9047e2a0893ee558c5e3fd56686e47c709e0"
         },
         {
           "disposition": "updated",
           "path": ".decapod/managed/specs/SECURITY.md",
-          "reason": "Current literal source and scoped native-path authority; preserve historical failure evidence and no merge authority",
+          "reason": "Recover through actual task authority and exact accepted base; historical failures and revoked custody remain auditable",
           "reviewed_code_fingerprint": "bc45054e56b20fedb9dd1cce8dbc4f2ea082adc9d748883372256a90c864940e",
           "spec_material_hash": "9bad2facc72710a48be9298757f1a9303f187c427d010cfd0ed0d01c9f4c88be"
         }
@@ -113,7 +118,7 @@
       ],
       "unknowns": [],
       "unresolved_contradictions": [],
-      "updated_at": "1794981784Z"
+      "updated_at": "1794982639Z"
     },
     "trajectory": {
       "active_boundaries": [
