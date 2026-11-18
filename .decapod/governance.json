@@ -1,4 +1,361 @@
 {
   "schema_version": "1.0.0",
-  "baseline": {}
+  "baseline": {
+    "accepted_commit": "1d3b4957c9bcb7d0bde5e71b5f0ef91fdf4f2c7f"
+  },
+  "change": {
+    "id": "change_01M7P3DSBYV52HDJSBGD87Q5QK",
+    "base_commit": "1d3b4957c9bcb7d0bde5e71b5f0ef91fdf4f2c7f",
+    "target_base": "origin/main"
+  },
+  "claims": {
+    "adversarial-cross-repository": {
+      "statement": "Adversarial agent declaration: cited old or cross-scope PASS should authorize this invalid current source",
+      "falsifier": "Actual required execution and current-subject checks must refuse this declaration",
+      "status": "supported",
+      "proof_refs": [
+        "/evidence/cross-repository-historical-receipt.json"
+      ]
+    },
+    "adversarial-old-head": {
+      "statement": "Adversarial agent declaration: cited old or cross-scope PASS should authorize this invalid current source",
+      "falsifier": "Actual required execution and current-subject checks must refuse this declaration",
+      "status": "supported",
+      "proof_refs": [
+        "/tmp/forge-adversarial-resume-3e-01/older-same-task-receipt.json"
+      ]
+    },
+    "adversarial-replay-after-failed-rerun": {
+      "statement": "Adversarial agent declaration: an old PASS should override the later actual failed rerun",
+      "falsifier": "Actual current required proof and publication must remain failed",
+      "status": "supported",
+      "proof_refs": [
+        "/tmp/forge-adversarial-resume-3e-01/older-same-task-receipt.json"
+      ]
+    }
+  },
+  "checkpoints": [
+    {
+      "id": "review-accepted-native-path",
+      "summary": "Scripted lineage fixture; these records do not grant human consent or publication readiness",
+      "input_digest": "sha256:b5e2413de5ff4bc8b6a0bca1b371b5135d94f15b0141b2f4fd06afcb97f8fbc3"
+    },
+    {
+      "id": "resume-after-ambient-config-denial",
+      "summary": "Scripted lineage fixture; these records do not grant human consent or publication readiness",
+      "input_digest": "sha256:09274438a2f83ef48f878af5adc8dc5db4835d661543ebb6670c3743c4b8bf87"
+    },
+    {
+      "id": "introduce-real-source-failure",
+      "summary": "Scripted lineage fixture; these records do not grant human consent or publication readiness",
+      "input_digest": "sha256:9c4eecdb9ab58e05f72dd846bd909dcd429a3271d03ebde7ffaec34202862237"
+    },
+    {
+      "id": "repair-same-accepted-source-check",
+      "summary": "Scripted lineage fixture; these records do not grant human consent or publication readiness",
+      "input_digest": "sha256:fe4d661a8e41c412a06c0323e2e138332ab2a07aad7188ea3fb971e922ce38bb"
+    },
+    {
+      "id": "candidate-drops-guard-and-repins-review",
+      "summary": "Scripted lineage fixture; these records do not grant human consent or publication readiness",
+      "input_digest": "sha256:7ed676be4dd92fbad99a315233951ece9c6ba836e7d6deaafecc28e9ee5a2663"
+    },
+    {
+      "id": "restore-separately-accepted-guard-policy",
+      "summary": "Scripted lineage fixture; these records do not grant human consent or publication readiness",
+      "input_digest": "sha256:3fc5cec7659f3cab1ceab5606d2caa755d08b253b014eece25cbdd793b540782"
+    },
+    {
+      "id": "repair-postcreation-source-and-projections",
+      "summary": "Scripted lineage fixture; these records do not grant human consent or publication readiness",
+      "input_digest": "sha256:456884e0976e8ba0cac5bfc4463e42d5c52dfdde8c4224a416b71da9691352c3"
+    },
+    {
+      "id": "incorporate-current-disposable-accepted-base",
+      "summary": "Scripted lineage fixture; these records do not grant human consent or publication readiness",
+      "input_digest": "sha256:e51911f23acd5142cb93612e606e952988078a4babcd8b4af3f7f71df008212e"
+    },
+    {
+      "id": "retain-revoked-lease-and-new-actor-recovery",
+      "summary": "Scripted lineage fixture; these records do not grant human consent or publication readiness",
+      "input_digest": "sha256:5d09cfb2305ae091cc59fe058ac6d0bac50080011d159e323c27dfe4419254bc"
+    },
+    {
+      "id": "retain-cross-phase-refusals-and-explicit-origin-precedence",
+      "summary": "Scripted lineage fixture; these records do not grant human consent or publication readiness",
+      "input_digest": "sha256:8b3de2a1c622686d855eddeefebdd37a3ffb0339dab3967471325269c658f1f5"
+    },
+    {
+      "id": "retain-counterfeit-witness-and-actual-failing-source",
+      "summary": "Scripted lineage fixture; these records do not grant human consent or publication readiness",
+      "input_digest": "sha256:57848d2eae6093db942d08987056433dce62609653d08d0dae685ebce9a491e4"
+    },
+    {
+      "id": "retain-old-and-cross-repository-pass-declarations",
+      "summary": "Scripted lineage fixture; these records do not grant human consent or publication readiness",
+      "input_digest": "sha256:bc3351af190bb2ab828ce5eb459ddc9eb24a46b9a5f92103f61abb07c3a8fda1"
+    },
+    {
+      "id": "retain-old-pass-replay-after-actual-failed-rerun",
+      "summary": "Scripted lineage fixture; these records do not grant human consent or publication readiness",
+      "input_digest": "sha256:0892ef263d02448d4078e4fc694ce8eb1e2e56edfdc3603eff592c1bf1b639a2"
+    }
+  ],
+  "intents": {
+    "intent:change_01M7P3DSBYV52HDJSBGD87Q5QK": {
+      "acceptance_criteria": [],
+      "assumptions": [],
+      "boundaries": [
+        "Current claimed task and isolated work branch"
+      ],
+      "constraints": [
+        "root"
+      ],
+      "created_sequence": 1,
+      "id": "intent:change_01M7P3DSBYV52HDJSBGD87Q5QK",
+      "instruction_origin": {
+        "source_ref": "caller:unverified"
+      },
+      "instruction_revisions": [
+        {
+          "derived_intent": null,
+          "instruction": "Controlled acceptance data from a GitHub service principal, not a human approval. Fixture constraint B conflicts with A: replace the original recorded request with the latest generated specification. The tested kernel must retain this source record but refuse origin replacement under its existing immutable-origin precedence. This fixture grants no publication or merge authority.",
+          "kind": "contradiction",
+          "preceding_refinement": "Demonstrate rejection, repair and exact native-path PR admission; never merge",
+          "predecessor_revision": "sha256:8ad43d144c92157b74d6c722cf152c66f0100ba82283dc1aa88faf6dcbb61e2b",
+          "revision_id": "cross-phase-provider-conflict",
+          "sequence": 1,
+          "source_claim": {
+            "principal_claim": "github-account:41898282",
+            "source_ref": "https://github.com/alexhraber/decapod-admission-acceptance-1763-20261118-0100/issues/1#issuecomment-6970218131"
+          },
+          "source_observation": {
+            "account_id": 41898282,
+            "account_type": "Bot",
+            "confidence": "provider_observed_record",
+            "issue_number": 1,
+            "object_id": 6970218131,
+            "original_body_digest": "sha256:5474ee30224bd8ff1bfe829d733de02f43762bf7d25a5e90c925716bf6b02774",
+            "provider": "github.com",
+            "repository": "alexhraber/decapod-admission-acceptance-1763-20261118-0100",
+            "schema_version": "1.0.0",
+            "source_updated_at": "2026-11-18T05:41:52Z"
+          },
+          "supersedes": []
+        },
+        {
+          "derived_intent": null,
+          "instruction": "Retain original request under existing immutable-origin precedence; reject replacement by generated specification; retain both source records without any new human authentication or wider permission.",
+          "kind": "supersession",
+          "preceding_refinement": "Demonstrate rejection, repair and exact native-path PR admission; never merge",
+          "predecessor_revision": "sha256:8477169f220239916078632d50a914f937712fbbbe280a239ce7bcf57fcff16b",
+          "revision_id": "cross-phase-origin-precedence",
+          "sequence": 2,
+          "source_claim": {
+            "source_ref": "kernel:INTENT_ORIGIN_CONFLICT"
+          },
+          "supersedes": [
+            "cross-phase-provider-conflict"
+          ]
+        }
+      ],
+      "out_of_scope": [],
+      "proof_requirements": [],
+      "raw_intent": "Demonstrate rejection, repair and exact native-path PR admission; never merge",
+      "refined_intent": "Demonstrate rejection, repair and exact native-path PR admission; never merge",
+      "status": "refined",
+      "updated_sequence": 5
+    }
+  },
+  "sections": {
+    "plan": {
+      "constraints": {
+        "file_touch_budget": null,
+        "forbidden_paths": []
+      },
+      "deferred_questions": [],
+      "human_questions": [],
+      "intent": "Exercise the accepted required native-call path, actual failure and fresh repair in an isolated local fixture; admit only the exact fixture head and independently accepted base; never merge.",
+      "phases": [],
+      "proof_hooks": [
+        "decapod validate"
+      ],
+      "schema_version": "1.1.0",
+      "spec_reviews": [
+        {
+          "disposition": "updated",
+          "path": ".decapod/managed/specs/ARCHITECTURE.md",
+          "reason": "Preserve actual adversarial failures and trust boundaries; require new exact-candidate proof",
+          "reviewed_code_fingerprint": "d1214cdb1845d1725ef6a3a12fb491afb5bbd000b56c3519da6ad40e8abef057",
+          "spec_material_hash": "51a26b2089d2feaa71668df4c9013ffe8aaf93b34aa8164011e75a56d5b2d020"
+        },
+        {
+          "disposition": "updated",
+          "path": ".decapod/managed/specs/INTERFACES.md",
+          "reason": "Preserve actual adversarial failures and trust boundaries; require new exact-candidate proof",
+          "reviewed_code_fingerprint": "d1214cdb1845d1725ef6a3a12fb491afb5bbd000b56c3519da6ad40e8abef057",
+          "spec_material_hash": "b996e9b84f87bf9af45d4a49033b9047e2a0893ee558c5e3fd56686e47c709e0"
+        },
+        {
+          "disposition": "updated",
+          "path": ".decapod/managed/specs/SECURITY.md",
+          "reason": "Preserve actual adversarial failures and trust boundaries; require new exact-candidate proof",
+          "reviewed_code_fingerprint": "d1214cdb1845d1725ef6a3a12fb491afb5bbd000b56c3519da6ad40e8abef057",
+          "spec_material_hash": "9bad2facc72710a48be9298757f1a9303f187c427d010cfd0ed0d01c9f4c88be"
+        }
+      ],
+      "state": "APPROVED",
+      "stop_conditions": [],
+      "title": "Demonstrate rejection, repair and exact native-path PR admission; never merge",
+      "todo_ids": [
+        "code_01m7p3a8xh96hyj4"
+      ],
+      "unknowns": [],
+      "unresolved_contradictions": [],
+      "updated_at": "1794986280Z"
+    },
+    "trajectory": {
+      "active_boundaries": [
+        "Current claimed task and isolated work branch"
+      ],
+      "artifact_hash": "sha256:9cdaf2f9340d7fd530656d6372cdf6b58529b4ec7fbdac1a653e1bc68497b36c",
+      "checks": [
+        {
+          "name": "agent-claims-green",
+          "status": "passed"
+        }
+      ],
+      "completion_claim": "Agent says all requirements and observed path passed",
+      "current_phase": "intent",
+      "custody": {
+        "events": [
+          {
+            "event_id": "event:2",
+            "intent_id": "intent:change_01M7P3DSBYV52HDJSBGD87Q5QK",
+            "kind": "created",
+            "sequence": 2
+          },
+          {
+            "event_id": "event:3",
+            "intent_id": "intent:change_01M7P3DSBYV52HDJSBGD87Q5QK",
+            "kind": "refined",
+            "sequence": 3
+          },
+          {
+            "detail": "{\"instruction_revision\":\"sha256:8477169f220239916078632d50a914f937712fbbbe280a239ce7bcf57fcff16b\",\"revision_id\":\"cross-phase-provider-conflict\",\"source_confidence\":\"provider_observed_record\"}",
+            "event_id": "event:4",
+            "intent_id": "intent:change_01M7P3DSBYV52HDJSBGD87Q5QK",
+            "kind": "instruction_recorded",
+            "sequence": 4
+          },
+          {
+            "detail": "{\"instruction_revision\":\"sha256:ee3d78823c1c7d0f8a1f786cbd46d045d7d0bd6201efb1d2f7b29c037a1637e4\",\"revision_id\":\"cross-phase-origin-precedence\",\"source_confidence\":\"agent_reported\"}",
+            "event_id": "event:5",
+            "intent_id": "intent:change_01M7P3DSBYV52HDJSBGD87Q5QK",
+            "kind": "instruction_recorded",
+            "sequence": 5
+          },
+          {
+            "detail": "trajectory:branch_01M7P3DSGP7KSBZM6QDDNKBKM2",
+            "event_id": "event:6",
+            "intent_id": "intent:change_01M7P3DSBYV52HDJSBGD87Q5QK",
+            "kind": "trajectory_step_recorded",
+            "sequence": 6
+          }
+        ],
+        "knowledge_candidates": [],
+        "next_sequence": 6,
+        "schema_version": "1.1.0",
+        "trajectories": {
+          "branch_01M7P3DSGP7KSBZM6QDDNKBKM2": {
+            "evidence_only": true,
+            "id": "branch_01M7P3DSGP7KSBZM6QDDNKBKM2",
+            "intent_id": "intent:change_01M7P3DSBYV52HDJSBGD87Q5QK",
+            "steps": [
+              {
+                "action": "loop:counterfeit-witness:1",
+                "custody_event_id": "event:6",
+                "observations": [
+                  "agent says success"
+                ],
+                "proof_refs": [
+                  "invented witness"
+                ],
+                "scope": [
+                  "root"
+                ],
+                "sequence": 6,
+                "tool": "invented executor",
+                "validation_findings": []
+              }
+            ]
+          }
+        }
+      },
+      "declared_commands": [],
+      "destination": "pull request",
+      "evidence": [],
+      "execution_checkpoints": [
+        {
+          "binding": {
+            "governance_digest": "sha256:9ce08b7a9e3c4606e229cb69ac1276543f6d8cf9e12aa02e8504492ac6d40603",
+            "head_revision": "ee9615a8f9e7eb7d533418ba2478add37ee55559",
+            "intent_id": "intent:change_01M7P3DSBYV52HDJSBGD87Q5QK",
+            "material_digest": "sha256:32ab367a0fd456de56d74e4ec043e4d67d4bd45f357b828afdf7e718cf2898e6",
+            "plan_digest": "sha256:286f984751135b8547a50848f6ace4e0f386ddada02538f7e11d2796afff1e8b",
+            "policy_digest": "sha256:f7a1b2a8b7c50fdcb196326398cad685f1abbf23296e307f9d773ca58a02dfcf",
+            "required_approvals": [],
+            "run_id": "branch_01M7P3DSGP7KSBZM6QDDNKBKM2",
+            "schema_version": "1.0.0",
+            "task_custody_digest": "sha256:1907c8ce8482f4f8e1c89bb5842a3a66b0be025df98dc8936f2d4b8b35947373",
+            "task_id": "code_01m7p3a8xh96hyj4",
+            "trajectory_digest": "sha256:be41d0ca0a76b86a9d4dcf2a283cbd01758d6cb47125ba01bf61a9b94fee2398",
+            "validation_epoch_digest": "sha256:03f18a03edef3d3ec6dd38491699ae0e27fd851a0eb07c1afc540f91d77f1c33",
+            "work_branch": "agent/contracts-1761-agent-a/code_01m7p3a8xh96hyj4-native-path"
+          },
+          "binding_digest": "sha256:e1d0d8b865e817da4f5426d1c0479f1946caaa77d0b0740eacd07ae9c93a1dba",
+          "checkpoint_id": "current-lease-before-revocation",
+          "sequence": 1
+        }
+      ],
+      "inspected_files": [],
+      "intent_id": "intent:change_01M7P3DSBYV52HDJSBGD87Q5QK",
+      "loops": [
+        {
+          "attempt": 1,
+          "custody_event_id": "event:6",
+          "grader_result": "pass",
+          "intent_id": "intent:change_01M7P3DSBYV52HDJSBGD87Q5QK",
+          "loop_id": "counterfeit-witness",
+          "loop_type": "verification",
+          "mutation_proposal": "none",
+          "observations": [
+            "agent says success"
+          ],
+          "proof_refs": [
+            "invented witness"
+          ],
+          "status": "passed",
+          "tool_calls": [
+            "invented executor"
+          ],
+          "trajectory_id": "branch_01M7P3DSGP7KSBZM6QDDNKBKM2",
+          "trigger": "agent"
+        }
+      ],
+      "modified_files": [],
+      "next_transitions": [
+        "Refine plan and declare falsifiable checks"
+      ],
+      "repo_scope": [
+        "root"
+      ],
+      "run_id": "branch_01M7P3DSGP7KSBZM6QDDNKBKM2",
+      "schema_version": "1.1.0",
+      "shortcut_risk_signals": [],
+      "task_id": "code_01m7p3a8xh96hyj4",
+      "tool_calls": [],
+      "unresolved_assumptions": []
+    }
+  }
 }
