@@ -110,8 +110,8 @@ export enum ApiErrorCode {
 
 ## Codebase Attestation
 
-- Repository signal fingerprint: `bc45054e56b20fedb9dd1cce8dbc4f2ea082adc9d748883372256a90c864940e`
-- Significant implementation surfaces: `src/` (2 files)
+- Repository signal fingerprint: `890e377668a9a7c97d2bf95d3af155b0e3f809d58e17d34369523ada01123888`
+- Significant implementation surfaces: `scripts/` (1 files), `src/` (3 files)
 - Refreshed from the current codebase by `decapod rpc --op specs.refresh`
 <!-- decapod:codebase-attestation:end -->
 
@@ -122,3 +122,5 @@ The separately accepted target requires the guard to remain required and payload
 The current measured v0.148.10 candidate reexecutes this accepted native contract after supported release regeneration. Original recorded source, provider revisions, failed attempts, external non-admitted control and current task custody remain preserved. A caller-declared PASS cannot replace actual accepted checks; a source failure refuses publication, and exact repair requires fresh native proof and independent current GitHub head/base readback. Human authentication, full-host observation and merge authorization remain unproven.
 
 The exact a62d6eb5 CI-built v0.148.10 executable reexecutes this accepted native contract after supported release regeneration. Original recorded source, provider revisions, failed attempts, external non-admitted control and current task custody remain preserved. A caller-declared PASS cannot replace actual accepted checks; a source failure refuses publication, and exact repair requires fresh native proof and independent current GitHub head/base readback. Human authentication, full-host observation and merge authorization remain unproven.
+
+The accepted selected-work contract requires R1 API, R2 UI and R3 audit for each privileged write. The audit criterion is frozen in the separately accepted target. Mapping is not execution; omitted R3, then a mapped but defective implementation, must refuse native readiness. Exact behavioral repair requires fresh required proof. All prior instruction, custody, policy and publication failures remain retained.
