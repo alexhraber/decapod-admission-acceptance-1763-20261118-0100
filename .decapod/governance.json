@@ -48,6 +48,11 @@
       "id": "incorporate-current-disposable-accepted-base",
       "summary": "Scripted lineage fixture; these records do not grant human consent or publication readiness",
       "input_digest": "sha256:e51911f23acd5142cb93612e606e952988078a4babcd8b4af3f7f71df008212e"
+    },
+    {
+      "id": "retain-revoked-lease-and-new-actor-recovery",
+      "summary": "Scripted lineage fixture; these records do not grant human consent or publication readiness",
+      "input_digest": "sha256:5d09cfb2305ae091cc59fe058ac6d0bac50080011d159e323c27dfe4419254bc"
     }
   ],
   "intents": {
@@ -118,13 +123,13 @@
       ],
       "unknowns": [],
       "unresolved_contradictions": [],
-      "updated_at": "1794982639Z"
+      "updated_at": "1794984025Z"
     },
     "trajectory": {
       "active_boundaries": [
         "Current claimed task and isolated work branch"
       ],
-      "artifact_hash": "sha256:be41d0ca0a76b86a9d4dcf2a283cbd01758d6cb47125ba01bf61a9b94fee2398",
+      "artifact_hash": "sha256:9161eb56630dbaef800322fdb49f079755b1c265ad88d57e33da44f3de469c6c",
       "checks": [],
       "current_phase": "intent",
       "custody": {
@@ -150,6 +155,29 @@
       "declared_commands": [],
       "destination": "pull request",
       "evidence": [],
+      "execution_checkpoints": [
+        {
+          "binding": {
+            "governance_digest": "sha256:9ce08b7a9e3c4606e229cb69ac1276543f6d8cf9e12aa02e8504492ac6d40603",
+            "head_revision": "ee9615a8f9e7eb7d533418ba2478add37ee55559",
+            "intent_id": "intent:change_01M7P3DSBYV52HDJSBGD87Q5QK",
+            "material_digest": "sha256:32ab367a0fd456de56d74e4ec043e4d67d4bd45f357b828afdf7e718cf2898e6",
+            "plan_digest": "sha256:286f984751135b8547a50848f6ace4e0f386ddada02538f7e11d2796afff1e8b",
+            "policy_digest": "sha256:f7a1b2a8b7c50fdcb196326398cad685f1abbf23296e307f9d773ca58a02dfcf",
+            "required_approvals": [],
+            "run_id": "branch_01M7P3DSGP7KSBZM6QDDNKBKM2",
+            "schema_version": "1.0.0",
+            "task_custody_digest": "sha256:1907c8ce8482f4f8e1c89bb5842a3a66b0be025df98dc8936f2d4b8b35947373",
+            "task_id": "code_01m7p3a8xh96hyj4",
+            "trajectory_digest": "sha256:be41d0ca0a76b86a9d4dcf2a283cbd01758d6cb47125ba01bf61a9b94fee2398",
+            "validation_epoch_digest": "sha256:03f18a03edef3d3ec6dd38491699ae0e27fd851a0eb07c1afc540f91d77f1c33",
+            "work_branch": "agent/contracts-1761-agent-a/code_01m7p3a8xh96hyj4-native-path"
+          },
+          "binding_digest": "sha256:e1d0d8b865e817da4f5426d1c0479f1946caaa77d0b0740eacd07ae9c93a1dba",
+          "checkpoint_id": "current-lease-before-revocation",
+          "sequence": 1
+        }
+      ],
       "inspected_files": [],
       "intent_id": "intent:change_01M7P3DSBYV52HDJSBGD87Q5QK",
       "modified_files": [],
