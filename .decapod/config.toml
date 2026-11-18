@@ -25,6 +25,13 @@ specs = true
 validation_buildkite_preflights = false
 
 [[proof.commands]]
+name = "guard-contract"
+command = "/usr/bin/grep"
+args = ["-F", "-x", "--", "required", "src/guard.txt"]
+description = "Independently accepted literal source assertion"
+required = true
+
+[[proof.commands]]
 name = "payload-contract"
 command = "/usr/bin/grep"
 args = ["-F", "-x", "--", "ready", "src/payload.txt"]
@@ -42,8 +49,17 @@ required = true
 
 [proof.repository_contract]
 canonical_local_target = false
-reviewed_commands_digest = "sha256:e30fe48bfa120f5a987c49f25dd38b580d1caf653f0fee6cd2465da531202d2c"
+reviewed_commands_digest = "sha256:bbb07d203ead574adc665ea3559260d9afad139d93bd8986598ac01c24536f71"
 source_coverage = []
+
+[proof.repository_contract.executions.guard-contract]
+program = "/usr/bin/grep"
+directory = "."
+timeout_seconds = 10
+[proof.repository_contract.executions.guard-contract.toolchain_files]
+declared_loader = "/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1"
+[proof.repository_contract.executions.guard-contract.environment]
+LC_ALL = "C"
 
 [proof.repository_contract.executions.payload-contract]
 program = "/usr/bin/grep"

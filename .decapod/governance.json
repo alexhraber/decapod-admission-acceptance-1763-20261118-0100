@@ -33,6 +33,11 @@
       "id": "candidate-drops-guard-and-repins-review",
       "summary": "Scripted lineage fixture; these records do not grant human consent or publication readiness",
       "input_digest": "sha256:7ed676be4dd92fbad99a315233951ece9c6ba836e7d6deaafecc28e9ee5a2663"
+    },
+    {
+      "id": "restore-separately-accepted-guard-policy",
+      "summary": "Scripted lineage fixture; these records do not grant human consent or publication readiness",
+      "input_digest": "sha256:3fc5cec7659f3cab1ceab5606d2caa755d08b253b014eece25cbdd793b540782"
     }
   ],
   "intents": {
@@ -103,7 +108,7 @@
       ],
       "unknowns": [],
       "unresolved_contradictions": [],
-      "updated_at": "1794978494Z"
+      "updated_at": "1794978838Z"
     },
     "trajectory": {
       "active_boundaries": [
