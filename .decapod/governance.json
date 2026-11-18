@@ -109,6 +109,11 @@
       "id": "bind-unique-head-before-canonical-policy-race",
       "summary": "Scripted lineage fixture; these records do not grant human consent or publication readiness",
       "input_digest": "sha256:343c32b28c699c4754d52cc8a8b5a363c60a5bd75754bfe81e1f4bfdf4001ef2"
+    },
+    {
+      "id": "retain-canonical-policy-race-refusal-and-restoration",
+      "summary": "Scripted lineage fixture; these records do not grant human consent or publication readiness",
+      "input_digest": "sha256:83ad537a56a97ac87c926b70c5d986fa278814deedf9e5466b361e2d49ac2544"
     }
   ],
   "intents": {
@@ -222,13 +227,13 @@
       ],
       "unknowns": [],
       "unresolved_contradictions": [],
-      "updated_at": "1794987488Z"
+      "updated_at": "1794987914Z"
     },
     "trajectory": {
       "active_boundaries": [
         "Current claimed task and isolated work branch"
       ],
-      "artifact_hash": "sha256:9cdaf2f9340d7fd530656d6372cdf6b58529b4ec7fbdac1a653e1bc68497b36c",
+      "artifact_hash": "sha256:afe84477f2dd6cbef3a0b6ff189dbcf987f7e06c4ec593ef2fe025c57704a456",
       "checks": [
         {
           "name": "agent-claims-green",
@@ -271,10 +276,17 @@
             "intent_id": "intent:change_01M7P3DSBYV52HDJSBGD87Q5QK",
             "kind": "trajectory_step_recorded",
             "sequence": 6
+          },
+          {
+            "detail": "trajectory:branch_01M7P3DSGP7KSBZM6QDDNKBKM2",
+            "event_id": "event:7",
+            "intent_id": "intent:change_01M7P3DSBYV52HDJSBGD87Q5QK",
+            "kind": "trajectory_step_recorded",
+            "sequence": 7
           }
         ],
         "knowledge_candidates": [],
-        "next_sequence": 6,
+        "next_sequence": 7,
         "schema_version": "1.1.0",
         "trajectories": {
           "branch_01M7P3DSGP7KSBZM6QDDNKBKM2": {
@@ -297,6 +309,19 @@
                 "sequence": 6,
                 "tool": "invented executor",
                 "validation_findings": []
+              },
+              {
+                "action": "trajectory.record",
+                "custody_event_id": "event:7",
+                "observations": [
+                  "Scripted host control observed successful native completion then changed canonical external-action policy; actual publication refused. Policy restored exactly; prior receipt remains historical and no human or merge authority was granted."
+                ],
+                "proof_refs": [],
+                "scope": [
+                  "root"
+                ],
+                "sequence": 7,
+                "validation_findings": []
               }
             ]
           }
@@ -304,7 +329,9 @@
       },
       "declared_commands": [],
       "destination": "pull request",
-      "evidence": [],
+      "evidence": [
+        "Scripted host control observed successful native completion then changed canonical external-action policy; actual publication refused. Policy restored exactly; prior receipt remains historical and no human or merge authority was granted."
+      ],
       "execution_checkpoints": [
         {
           "binding": {
