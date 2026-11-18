@@ -127,3 +127,16 @@ flowchart LR
 |---|---|---|---|
 | Which interfaces are versioned at launch? | TBD | YYYY-MM-DD | |
 | Which non-functional target is hardest to hit? | TBD | YYYY-MM-DD | |
+
+<!-- decapod:codebase-attestation:start -->
+
+## Codebase Attestation
+
+- Repository signal fingerprint: `bc45054e56b20fedb9dd1cce8dbc4f2ea082adc9d748883372256a90c864940e`
+- Significant implementation surfaces: `src/` (2 files)
+- Refreshed from the current codebase by `decapod rpc --op specs.refresh`
+<!-- decapod:codebase-attestation:end -->
+
+## Native path acceptance
+
+The separately accepted target requires the guard to remain required and payload to be ready. Both literal checks must execute through native authorization under the current task, plan, instruction, policy and lease. A successful native path has bounded kernel coverage, with full-host observation unknown. Configured PR admission requires matching proof and final independent GitHub readback; merge remains unauthorized.

@@ -1,4 +1,135 @@
 {
   "schema_version": "1.0.0",
-  "baseline": {}
+  "baseline": {
+    "accepted_commit": "1d3b4957c9bcb7d0bde5e71b5f0ef91fdf4f2c7f"
+  },
+  "change": {
+    "id": "change_01M7P3DSBYV52HDJSBGD87Q5QK",
+    "base_commit": "1d3b4957c9bcb7d0bde5e71b5f0ef91fdf4f2c7f",
+    "target_base": "origin/main"
+  },
+  "checkpoints": [
+    {
+      "id": "review-accepted-native-path",
+      "summary": "Scripted lineage fixture; these records do not grant human consent or publication readiness",
+      "input_digest": "sha256:b5e2413de5ff4bc8b6a0bca1b371b5135d94f15b0141b2f4fd06afcb97f8fbc3"
+    }
+  ],
+  "intents": {
+    "intent:change_01M7P3DSBYV52HDJSBGD87Q5QK": {
+      "acceptance_criteria": [],
+      "assumptions": [],
+      "boundaries": [
+        "Current claimed task and isolated work branch"
+      ],
+      "constraints": [
+        "root"
+      ],
+      "created_sequence": 1,
+      "id": "intent:change_01M7P3DSBYV52HDJSBGD87Q5QK",
+      "instruction_origin": {
+        "source_ref": "caller:unverified"
+      },
+      "out_of_scope": [],
+      "proof_requirements": [],
+      "raw_intent": "Demonstrate rejection, repair and exact native-path PR admission; never merge",
+      "refined_intent": "Demonstrate rejection, repair and exact native-path PR admission; never merge",
+      "status": "refined",
+      "updated_sequence": 3
+    }
+  },
+  "sections": {
+    "plan": {
+      "constraints": {
+        "file_touch_budget": null,
+        "forbidden_paths": []
+      },
+      "deferred_questions": [],
+      "human_questions": [],
+      "intent": "Exercise the accepted required native-call path, actual failure and fresh repair in an isolated local fixture; admit only the exact fixture head and independently accepted base; never merge.",
+      "phases": [],
+      "proof_hooks": [
+        "decapod validate"
+      ],
+      "schema_version": "1.1.0",
+      "spec_reviews": [
+        {
+          "disposition": "updated",
+          "path": ".decapod/managed/specs/ARCHITECTURE.md",
+          "reason": "Reviewed current literal source assertions, accepted native path, and scope limits",
+          "reviewed_code_fingerprint": "bc45054e56b20fedb9dd1cce8dbc4f2ea082adc9d748883372256a90c864940e",
+          "spec_material_hash": "51a26b2089d2feaa71668df4c9013ffe8aaf93b34aa8164011e75a56d5b2d020"
+        },
+        {
+          "disposition": "updated",
+          "path": ".decapod/managed/specs/INTERFACES.md",
+          "reason": "Reviewed current literal source assertions, accepted native path, and scope limits",
+          "reviewed_code_fingerprint": "bc45054e56b20fedb9dd1cce8dbc4f2ea082adc9d748883372256a90c864940e",
+          "spec_material_hash": "b996e9b84f87bf9af45d4a49033b9047e2a0893ee558c5e3fd56686e47c709e0"
+        },
+        {
+          "disposition": "updated",
+          "path": ".decapod/managed/specs/SECURITY.md",
+          "reason": "Reviewed current literal source assertions, accepted native path, and scope limits",
+          "reviewed_code_fingerprint": "bc45054e56b20fedb9dd1cce8dbc4f2ea082adc9d748883372256a90c864940e",
+          "spec_material_hash": "9bad2facc72710a48be9298757f1a9303f187c427d010cfd0ed0d01c9f4c88be"
+        }
+      ],
+      "state": "APPROVED",
+      "stop_conditions": [],
+      "title": "Demonstrate rejection, repair and exact native-path PR admission; never merge",
+      "todo_ids": [
+        "code_01m7p3a8xh96hyj4"
+      ],
+      "unknowns": [],
+      "unresolved_contradictions": [],
+      "updated_at": "1794964630Z"
+    },
+    "trajectory": {
+      "active_boundaries": [
+        "Current claimed task and isolated work branch"
+      ],
+      "artifact_hash": "sha256:be41d0ca0a76b86a9d4dcf2a283cbd01758d6cb47125ba01bf61a9b94fee2398",
+      "checks": [],
+      "current_phase": "intent",
+      "custody": {
+        "events": [
+          {
+            "event_id": "event:2",
+            "intent_id": "intent:change_01M7P3DSBYV52HDJSBGD87Q5QK",
+            "kind": "created",
+            "sequence": 2
+          },
+          {
+            "event_id": "event:3",
+            "intent_id": "intent:change_01M7P3DSBYV52HDJSBGD87Q5QK",
+            "kind": "refined",
+            "sequence": 3
+          }
+        ],
+        "knowledge_candidates": [],
+        "next_sequence": 3,
+        "schema_version": "1.1.0",
+        "trajectories": {}
+      },
+      "declared_commands": [],
+      "destination": "pull request",
+      "evidence": [],
+      "inspected_files": [],
+      "intent_id": "intent:change_01M7P3DSBYV52HDJSBGD87Q5QK",
+      "modified_files": [],
+      "next_transitions": [
+        "Refine plan and declare falsifiable checks"
+      ],
+      "repo_scope": [
+        "root"
+      ],
+      "run_id": "branch_01M7P3DSGP7KSBZM6QDDNKBKM2",
+      "schema_version": "1.1.0",
+      "shortcut_risk_signals": [],
+      "task_id": "code_01m7p3a8xh96hyj4",
+      "tool_calls": [],
+      "unresolved_assumptions": []
+    }
+  }
 }
