@@ -159,6 +159,11 @@
       "id": "retain-accepted-global-conflict-with-all-roots-present",
       "summary": "Scripted lineage fixture; these records do not grant human consent or publication readiness",
       "input_digest": "sha256:c0e9aedd3c31328bab8a84cbffd37257295702d9e1ba6cd8d2337b796b32c76e"
+    },
+    {
+      "id": "retain-authorized-consistent-revision-and-current-plan",
+      "summary": "Scripted lineage fixture; these records do not grant human consent or publication readiness",
+      "input_digest": "sha256:928cfe99d2642ca9c3884b7a755bbdf0c99ed8eedacc99de7029191cb58e7a41"
     }
   ],
   "intents": {
@@ -254,7 +259,7 @@
           "path": ".decapod/managed/specs/INTERFACES.md",
           "reason": "All roots remain mapped; accepted equality/inequality conflict is distinct from actual audit behavior. Preserve the conflict, rejected unilateral rewrite, explicit accepted revision and fresh required proof",
           "reviewed_code_fingerprint": "d3818fba7b861f1c6eea4c200d11b147dd722fa11b2ef49f1e1aea8edcbf0ae0",
-          "spec_material_hash": "6433c7c890d137ea624e75a3999cb4fa4e51878e571696dbcce9a99c8e6cfdc0"
+          "spec_material_hash": "fae111d89f42778ce6f6fb13097c893e14bb9f99f49459372e9dbf0d8447ca71"
         },
         {
           "disposition": "updated",
@@ -272,7 +277,7 @@
       ],
       "unknowns": [],
       "unresolved_contradictions": [],
-      "updated_at": "1794997602Z"
+      "updated_at": "1794998154Z"
     },
     "trajectory": {
       "active_boundaries": [
