@@ -8,6 +8,24 @@
     "base_commit": "1d3b4957c9bcb7d0bde5e71b5f0ef91fdf4f2c7f",
     "target_base": "origin/main"
   },
+  "claims": {
+    "adversarial-cross-repository": {
+      "statement": "Adversarial agent declaration: cited old or cross-scope PASS should authorize this invalid current source",
+      "falsifier": "Actual required execution and current-subject checks must refuse this declaration",
+      "status": "supported",
+      "proof_refs": [
+        "/evidence/cross-repository-historical-receipt.json"
+      ]
+    },
+    "adversarial-old-head": {
+      "statement": "Adversarial agent declaration: cited old or cross-scope PASS should authorize this invalid current source",
+      "falsifier": "Actual required execution and current-subject checks must refuse this declaration",
+      "status": "supported",
+      "proof_refs": [
+        "/tmp/forge-adversarial-resume-3e-01/older-same-task-receipt.json"
+      ]
+    }
+  },
   "checkpoints": [
     {
       "id": "review-accepted-native-path",
@@ -63,6 +81,11 @@
       "id": "retain-counterfeit-witness-and-actual-failing-source",
       "summary": "Scripted lineage fixture; these records do not grant human consent or publication readiness",
       "input_digest": "sha256:57848d2eae6093db942d08987056433dce62609653d08d0dae685ebce9a491e4"
+    },
+    {
+      "id": "retain-old-and-cross-repository-pass-declarations",
+      "summary": "Scripted lineage fixture; these records do not grant human consent or publication readiness",
+      "input_digest": "sha256:bc3351af190bb2ab828ce5eb459ddc9eb24a46b9a5f92103f61abb07c3a8fda1"
     }
   ],
   "intents": {
@@ -176,7 +199,7 @@
       ],
       "unknowns": [],
       "unresolved_contradictions": [],
-      "updated_at": "1794985443Z"
+      "updated_at": "1794985977Z"
     },
     "trajectory": {
       "active_boundaries": [
