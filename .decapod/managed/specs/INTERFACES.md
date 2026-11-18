@@ -105,3 +105,30 @@ export enum ApiErrorCode {
 - [ ] Consumers can distinguish validation, authorization, conflict,
   dependency, and internal failures.
 - [ ] Backward compatibility or migration instructions are published.
+
+<!-- decapod:codebase-attestation:start -->
+
+## Codebase Attestation
+
+- Repository signal fingerprint: `d3818fba7b861f1c6eea4c200d11b147dd722fa11b2ef49f1e1aea8edcbf0ae0`
+- Significant implementation surfaces: `scripts/` (1 files), `src/` (3 files)
+- Refreshed from the current codebase by `decapod rpc --op specs.refresh`
+<!-- decapod:codebase-attestation:end -->
+
+## Native path acceptance
+
+The separately accepted target requires the guard to remain required and payload to be ready. Both literal checks must execute through native authorization under the current task, plan, instruction, policy and lease. A successful native path has bounded kernel coverage, with full-host observation unknown. Configured PR admission requires matching proof and final independent GitHub readback; merge remains unauthorized.
+
+The current measured v0.148.10 candidate reexecutes this accepted native contract after supported release regeneration. Original recorded source, provider revisions, failed attempts, external non-admitted control and current task custody remain preserved. A caller-declared PASS cannot replace actual accepted checks; a source failure refuses publication, and exact repair requires fresh native proof and independent current GitHub head/base readback. Human authentication, full-host observation and merge authorization remain unproven.
+
+The exact a62d6eb5 CI-built v0.148.10 executable reexecutes this accepted native contract after supported release regeneration. Original recorded source, provider revisions, failed attempts, external non-admitted control and current task custody remain preserved. A caller-declared PASS cannot replace actual accepted checks; a source failure refuses publication, and exact repair requires fresh native proof and independent current GitHub head/base readback. Human authentication, full-host observation and merge authorization remain unproven.
+
+The accepted selected-work contract requires R1 API, R2 UI and R3 audit for each privileged write. The audit criterion is frozen in the separately accepted target. Mapping is not execution; omitted R3, then a mapped but defective implementation, must refuse native readiness. Exact behavioral repair requires fresh required proof. All prior instruction, custody, policy and publication failures remain retained.
+
+All three explicit roots are represented. Each standalone and pair relation projection is satisfiable, but the accepted full A=B, B=C, A!=C set has no joint assignment. This requires source-identified refusal across plan, execution, validation and publication. A generated consistent rewrite is not an authority decision. Preserve failed history, accept a real target revision, and rerun all actual checks; logical satisfiability alone is not application proof.
+
+The controller separately accepted A=C in place of A!=C, retaining the contradictory target commit in history. Current source-bound mappings select the new revision. Reaccept the current plan and execute the unchanged audit, payload and guard checks before exact-head/base publication; prior relation or behavior proof is not reused as current authority.
+
+The exact 38b37c90 CI-built v0.148.11 executable reexecutes this accepted native contract after supported release regeneration. Original recorded source, provider revisions, failed attempts, external non-admitted control and current task custody remain preserved. A caller-declared PASS cannot replace actual accepted checks; a source failure refuses publication, and exact repair requires fresh native proof and independent current GitHub head/base readback. Human authentication, full-host observation and merge authorization remain unproven.
+
+The exact 7b48b761 CI-built v0.148.11 executable reexecutes this accepted native contract after supported release regeneration. Original recorded source, provider revisions, failed attempts, external non-admitted control and current task custody remain preserved. A caller-declared PASS cannot replace actual accepted checks; a source failure refuses publication, and exact repair requires fresh native proof and independent current GitHub head/base readback. Human authentication, full-host observation and merge authorization remain unproven.
