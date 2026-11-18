@@ -130,8 +130,8 @@ right = "B"
 kind = "eq"
 
 [[proof.selected_work.relations]]
-id = "REL-BC"
-requirement = "R2-UI"
-left = "B"
+id = "REL-AC"
+requirement = "R3-AUDIT"
+left = "A"
 right = "C"
-kind = "eq"
+kind = "ne"
