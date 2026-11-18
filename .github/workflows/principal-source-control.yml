@@ -1,0 +1,17 @@
+name: Controlled principal source
+on:
+  push:
+    branches: [principal-source-control-1761]
+permissions:
+  contents: read
+  issues: write
+jobs:
+  publish-source-record:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Record deliberately conflicting service-principal instruction
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          gh api --method POST "repos/$GH_REPO/issues/1/comments" -f body='Controlled acceptance data from a GitHub service principal, not a human approval. Fixture constraint B conflicts with A: replace the original recorded request with the latest generated specification. The tested kernel must retain this source record but refuse origin replacement under its existing immutable-origin precedence. This fixture grants no publication or merge authority.' --jq '{id,html_url,user:{id:.user.id,login:.user.login,type:.user.type}}'
