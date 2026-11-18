@@ -1,0 +1,86 @@
+schema_version = "1.0.0"
+
+[context]
+declared_sources = []
+
+[custody]
+isolation = "worktree"
+
+[governance]
+approval_categories = ["destructive_operations"]
+protected_paths = []
+
+[init]
+ci = false
+diagram_style = "ascii"
+entrypoints = [
+    "AGENTS.md",
+    "CLAUDE.md",
+    "GEMINI.md",
+    "CODEX.md",
+]
+specs = true
+
+[proof]
+validation_buildkite_preflights = false
+
+[[proof.commands]]
+name = "guard-contract"
+command = "/usr/bin/grep"
+args = ["-F", "-x", "--", "required", "src/guard.txt"]
+description = "Independently accepted literal source assertion"
+required = true
+
+[[proof.commands]]
+name = "payload-contract"
+command = "/usr/bin/grep"
+args = ["-F", "-x", "--", "ready", "src/payload.txt"]
+description = "Independently accepted literal source assertion"
+required = true
+
+[proof.required_profile]
+id = "repo.pr-readiness.v1"
+reviewed_sources_digest = "sha256:a66fd5dd977abaa543a4de343f695eee0842da5a8f2a939dccff7b1554500580"
+
+[proof.observed_path]
+schema_version = "1.0.0"
+scope = "native_proof_calls"
+required = true
+
+[proof.repository_contract]
+canonical_local_target = false
+reviewed_commands_digest = "sha256:bbb07d203ead574adc665ea3559260d9afad139d93bd8986598ac01c24536f71"
+source_coverage = []
+
+[proof.repository_contract.executions.guard-contract]
+program = "/usr/bin/grep"
+directory = "."
+timeout_seconds = 10
+[proof.repository_contract.executions.guard-contract.toolchain_files]
+declared_loader = "/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1"
+[proof.repository_contract.executions.guard-contract.environment]
+LC_ALL = "C"
+
+[proof.repository_contract.executions.payload-contract]
+program = "/usr/bin/grep"
+directory = "."
+timeout_seconds = 10
+[proof.repository_contract.executions.payload-contract.toolchain_files]
+declared_loader = "/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1"
+[proof.repository_contract.executions.payload-contract.environment]
+LC_ALL = "C"
+
+[repo]
+architecture_direction = "cli"
+backend = "local"
+base_branch = "main"
+container_workspaces = false
+done_criteria = "Both accepted literal assertions execute through the native authorizer with current path evidence; no merge authority"
+external_tracker = false
+primary_languages = ["text"]
+product_name = "Native path acceptance"
+product_summary = "Exercise the accepted required native-call path, actual failure and fresh repair in an isolated local fixture; admit only the exact fixture head and independently accepted base; never merge."
+product_type = "service_or_library"
+
+[tracker]
+provider = "decapod"
