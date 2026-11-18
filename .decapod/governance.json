@@ -149,6 +149,11 @@
       "id": "retain-accepted-root-omission-and-real-audit-defect",
       "summary": "Scripted lineage fixture; these records do not grant human consent or publication readiness",
       "input_digest": "sha256:b390e2dad4a6d0ff869d3a41fca72b8901543e24ff6f1af14cdca3107fc42306"
+    },
+    {
+      "id": "repair-actual-privileged-write-audit-without-changing-accepted-criterion",
+      "summary": "Scripted lineage fixture; these records do not grant human consent or publication readiness",
+      "input_digest": "sha256:d002152b108d910a57a8528f1c21d642ef439c0ac9bf0388940b905d3185b05b"
     }
   ],
   "intents": {
@@ -236,21 +241,21 @@
           "disposition": "updated",
           "path": ".decapod/managed/specs/ARCHITECTURE.md",
           "reason": "Accepted R1/R2/R3 root conservation is separate from actual privileged-write audit behavior; keep prior failures and no human/merge grant",
-          "reviewed_code_fingerprint": "890e377668a9a7c97d2bf95d3af155b0e3f809d58e17d34369523ada01123888",
+          "reviewed_code_fingerprint": "d3818fba7b861f1c6eea4c200d11b147dd722fa11b2ef49f1e1aea8edcbf0ae0",
           "spec_material_hash": "51a26b2089d2feaa71668df4c9013ffe8aaf93b34aa8164011e75a56d5b2d020"
         },
         {
           "disposition": "updated",
           "path": ".decapod/managed/specs/INTERFACES.md",
           "reason": "Accepted R1/R2/R3 root conservation is separate from actual privileged-write audit behavior; keep prior failures and no human/merge grant",
-          "reviewed_code_fingerprint": "890e377668a9a7c97d2bf95d3af155b0e3f809d58e17d34369523ada01123888",
+          "reviewed_code_fingerprint": "d3818fba7b861f1c6eea4c200d11b147dd722fa11b2ef49f1e1aea8edcbf0ae0",
           "spec_material_hash": "b03006cfffa651d0c0f848ce855e1513baab9cae34c44812535206a981bb185c"
         },
         {
           "disposition": "updated",
           "path": ".decapod/managed/specs/SECURITY.md",
           "reason": "Accepted R1/R2/R3 root conservation is separate from actual privileged-write audit behavior; keep prior failures and no human/merge grant",
-          "reviewed_code_fingerprint": "890e377668a9a7c97d2bf95d3af155b0e3f809d58e17d34369523ada01123888",
+          "reviewed_code_fingerprint": "d3818fba7b861f1c6eea4c200d11b147dd722fa11b2ef49f1e1aea8edcbf0ae0",
           "spec_material_hash": "9bad2facc72710a48be9298757f1a9303f187c427d010cfd0ed0d01c9f4c88be"
         }
       ],
@@ -262,7 +267,7 @@
       ],
       "unknowns": [],
       "unresolved_contradictions": [],
-      "updated_at": "1794995313Z"
+      "updated_at": "1794995693Z"
     },
     "trajectory": {
       "active_boundaries": [

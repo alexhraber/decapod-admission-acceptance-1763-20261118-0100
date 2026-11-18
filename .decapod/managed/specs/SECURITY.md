@@ -119,7 +119,7 @@ Describe the security primitives and security controls implemented in this repos
 
 ## Codebase Attestation
 
-- Repository signal fingerprint: `890e377668a9a7c97d2bf95d3af155b0e3f809d58e17d34369523ada01123888`
+- Repository signal fingerprint: `d3818fba7b861f1c6eea4c200d11b147dd722fa11b2ef49f1e1aea8edcbf0ae0`
 - Significant implementation surfaces: `scripts/` (1 files), `src/` (3 files)
 - Refreshed from the current codebase by `decapod rpc --op specs.refresh`
 <!-- decapod:codebase-attestation:end -->
