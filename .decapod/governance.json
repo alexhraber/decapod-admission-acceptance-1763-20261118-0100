@@ -24,6 +24,14 @@
       "proof_refs": [
         "/tmp/forge-adversarial-resume-3e-01/older-same-task-receipt.json"
       ]
+    },
+    "adversarial-replay-after-failed-rerun": {
+      "statement": "Adversarial agent declaration: an old PASS should override the later actual failed rerun",
+      "falsifier": "Actual current required proof and publication must remain failed",
+      "status": "supported",
+      "proof_refs": [
+        "/tmp/forge-adversarial-resume-3e-01/older-same-task-receipt.json"
+      ]
     }
   },
   "checkpoints": [
@@ -86,6 +94,11 @@
       "id": "retain-old-and-cross-repository-pass-declarations",
       "summary": "Scripted lineage fixture; these records do not grant human consent or publication readiness",
       "input_digest": "sha256:bc3351af190bb2ab828ce5eb459ddc9eb24a46b9a5f92103f61abb07c3a8fda1"
+    },
+    {
+      "id": "retain-old-pass-replay-after-actual-failed-rerun",
+      "summary": "Scripted lineage fixture; these records do not grant human consent or publication readiness",
+      "input_digest": "sha256:0892ef263d02448d4078e4fc694ce8eb1e2e56edfdc3603eff592c1bf1b639a2"
     }
   ],
   "intents": {
@@ -199,7 +212,7 @@
       ],
       "unknowns": [],
       "unresolved_contradictions": [],
-      "updated_at": "1794985977Z"
+      "updated_at": "1794986280Z"
     },
     "trajectory": {
       "active_boundaries": [
