@@ -129,6 +129,11 @@
       "id": "repair-current-runtime-source-without-repinning-policy",
       "summary": "Scripted lineage fixture; these records do not grant human consent or publication readiness",
       "input_digest": "sha256:15cf2e4233e0a3a377caaaf2fd4c410a042d4be9f05d6016547285c88b1c9b38"
+    },
+    {
+      "id": "retain-exact-a62-candidate-runtime-measurement",
+      "summary": "Scripted lineage fixture; these records do not grant human consent or publication readiness",
+      "input_digest": "sha256:aca391cc5f66899a669d3082713811b614061e2cf351426b988c8c1eb4010cc5"
     }
   ],
   "intents": {
@@ -224,7 +229,7 @@
           "path": ".decapod/managed/specs/INTERFACES.md",
           "reason": "Current measured candidate and real required negative/repair execution; preserve provenance, earlier failures and no human/merge grant",
           "reviewed_code_fingerprint": "bc45054e56b20fedb9dd1cce8dbc4f2ea082adc9d748883372256a90c864940e",
-          "spec_material_hash": "5a6b013dd7c203236572be698ee7e9d41d5b7fae65455e605e8308ad3a4abbd3"
+          "spec_material_hash": "d25d45b05543549f1493a00756be7cfbea767e711e1ddca3983aabbd38b00df5"
         },
         {
           "disposition": "updated",
@@ -242,7 +247,7 @@
       ],
       "unknowns": [],
       "unresolved_contradictions": [],
-      "updated_at": "1794989885Z"
+      "updated_at": "1794990438Z"
     },
     "trajectory": {
       "active_boundaries": [
