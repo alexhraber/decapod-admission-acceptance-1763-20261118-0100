@@ -38,6 +38,11 @@
       "id": "restore-separately-accepted-guard-policy",
       "summary": "Scripted lineage fixture; these records do not grant human consent or publication readiness",
       "input_digest": "sha256:3fc5cec7659f3cab1ceab5606d2caa755d08b253b014eece25cbdd793b540782"
+    },
+    {
+      "id": "repair-postcreation-source-and-projections",
+      "summary": "Scripted lineage fixture; these records do not grant human consent or publication readiness",
+      "input_digest": "sha256:456884e0976e8ba0cac5bfc4463e42d5c52dfdde8c4224a416b71da9691352c3"
     }
   ],
   "intents": {
@@ -108,7 +113,7 @@
       ],
       "unknowns": [],
       "unresolved_contradictions": [],
-      "updated_at": "1794978838Z"
+      "updated_at": "1794981784Z"
     },
     "trajectory": {
       "active_boundaries": [
