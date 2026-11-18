@@ -1,1 +1,1 @@
-ready
+current candidate must reject this source despite an old PASS
