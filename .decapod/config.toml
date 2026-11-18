@@ -109,7 +109,6 @@ schema_version = "1.0.0"
 id = "actual-selected-audit"
 intent_id = "intent:change_01M7P3DSBYV52HDJSBGD87Q5QK"
 instruction_revision = "sha256:ee3d78823c1c7d0f8a1f786cbd46d045d7d0bd6201efb1d2f7b29c037a1637e4"
-relations = []
 
 [[proof.selected_work.roots]]
 id = "R1-API"
@@ -122,3 +121,10 @@ checks = ["payload-contract"]
 [[proof.selected_work.roots]]
 id = "R3-AUDIT"
 checks = ["audit-contract"]
+
+[[proof.selected_work.relations]]
+id = "REL-AB"
+requirement = "R1-API"
+left = "A"
+right = "B"
+kind = "eq"
