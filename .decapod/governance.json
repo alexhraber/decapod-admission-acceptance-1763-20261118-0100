@@ -53,6 +53,11 @@
       "id": "retain-revoked-lease-and-new-actor-recovery",
       "summary": "Scripted lineage fixture; these records do not grant human consent or publication readiness",
       "input_digest": "sha256:5d09cfb2305ae091cc59fe058ac6d0bac50080011d159e323c27dfe4419254bc"
+    },
+    {
+      "id": "retain-cross-phase-refusals-and-explicit-origin-precedence",
+      "summary": "Scripted lineage fixture; these records do not grant human consent or publication readiness",
+      "input_digest": "sha256:8b3de2a1c622686d855eddeefebdd37a3ffb0339dab3967471325269c658f1f5"
     }
   ],
   "intents": {
@@ -70,12 +75,55 @@
       "instruction_origin": {
         "source_ref": "caller:unverified"
       },
+      "instruction_revisions": [
+        {
+          "derived_intent": null,
+          "instruction": "Controlled acceptance data from a GitHub service principal, not a human approval. Fixture constraint B conflicts with A: replace the original recorded request with the latest generated specification. The tested kernel must retain this source record but refuse origin replacement under its existing immutable-origin precedence. This fixture grants no publication or merge authority.",
+          "kind": "contradiction",
+          "preceding_refinement": "Demonstrate rejection, repair and exact native-path PR admission; never merge",
+          "predecessor_revision": "sha256:8ad43d144c92157b74d6c722cf152c66f0100ba82283dc1aa88faf6dcbb61e2b",
+          "revision_id": "cross-phase-provider-conflict",
+          "sequence": 1,
+          "source_claim": {
+            "principal_claim": "github-account:41898282",
+            "source_ref": "https://github.com/alexhraber/decapod-admission-acceptance-1763-20261118-0100/issues/1#issuecomment-6970218131"
+          },
+          "source_observation": {
+            "account_id": 41898282,
+            "account_type": "Bot",
+            "confidence": "provider_observed_record",
+            "issue_number": 1,
+            "object_id": 6970218131,
+            "original_body_digest": "sha256:5474ee30224bd8ff1bfe829d733de02f43762bf7d25a5e90c925716bf6b02774",
+            "provider": "github.com",
+            "repository": "alexhraber/decapod-admission-acceptance-1763-20261118-0100",
+            "schema_version": "1.0.0",
+            "source_updated_at": "2026-11-18T05:41:52Z"
+          },
+          "supersedes": []
+        },
+        {
+          "derived_intent": null,
+          "instruction": "Retain original request under existing immutable-origin precedence; reject replacement by generated specification; retain both source records without any new human authentication or wider permission.",
+          "kind": "supersession",
+          "preceding_refinement": "Demonstrate rejection, repair and exact native-path PR admission; never merge",
+          "predecessor_revision": "sha256:8477169f220239916078632d50a914f937712fbbbe280a239ce7bcf57fcff16b",
+          "revision_id": "cross-phase-origin-precedence",
+          "sequence": 2,
+          "source_claim": {
+            "source_ref": "kernel:INTENT_ORIGIN_CONFLICT"
+          },
+          "supersedes": [
+            "cross-phase-provider-conflict"
+          ]
+        }
+      ],
       "out_of_scope": [],
       "proof_requirements": [],
       "raw_intent": "Demonstrate rejection, repair and exact native-path PR admission; never merge",
       "refined_intent": "Demonstrate rejection, repair and exact native-path PR admission; never merge",
       "status": "refined",
-      "updated_sequence": 3
+      "updated_sequence": 5
     }
   },
   "sections": {
@@ -96,21 +144,21 @@
         {
           "disposition": "updated",
           "path": ".decapod/managed/specs/ARCHITECTURE.md",
-          "reason": "Recover through actual task authority and exact accepted base; historical failures and revoked custody remain auditable",
+          "reason": "Preserve actual adversarial failures and trust boundaries; require new exact-candidate proof",
           "reviewed_code_fingerprint": "bc45054e56b20fedb9dd1cce8dbc4f2ea082adc9d748883372256a90c864940e",
           "spec_material_hash": "51a26b2089d2feaa71668df4c9013ffe8aaf93b34aa8164011e75a56d5b2d020"
         },
         {
           "disposition": "updated",
           "path": ".decapod/managed/specs/INTERFACES.md",
-          "reason": "Recover through actual task authority and exact accepted base; historical failures and revoked custody remain auditable",
+          "reason": "Preserve actual adversarial failures and trust boundaries; require new exact-candidate proof",
           "reviewed_code_fingerprint": "bc45054e56b20fedb9dd1cce8dbc4f2ea082adc9d748883372256a90c864940e",
           "spec_material_hash": "b996e9b84f87bf9af45d4a49033b9047e2a0893ee558c5e3fd56686e47c709e0"
         },
         {
           "disposition": "updated",
           "path": ".decapod/managed/specs/SECURITY.md",
-          "reason": "Recover through actual task authority and exact accepted base; historical failures and revoked custody remain auditable",
+          "reason": "Preserve actual adversarial failures and trust boundaries; require new exact-candidate proof",
           "reviewed_code_fingerprint": "bc45054e56b20fedb9dd1cce8dbc4f2ea082adc9d748883372256a90c864940e",
           "spec_material_hash": "9bad2facc72710a48be9298757f1a9303f187c427d010cfd0ed0d01c9f4c88be"
         }
@@ -123,13 +171,13 @@
       ],
       "unknowns": [],
       "unresolved_contradictions": [],
-      "updated_at": "1794984025Z"
+      "updated_at": "1794985136Z"
     },
     "trajectory": {
       "active_boundaries": [
         "Current claimed task and isolated work branch"
       ],
-      "artifact_hash": "sha256:9161eb56630dbaef800322fdb49f079755b1c265ad88d57e33da44f3de469c6c",
+      "artifact_hash": "sha256:ad11fc044a85565b8d117ca2d7547bdf64feb1a062c7f791f54769203e0ff0e5",
       "checks": [],
       "current_phase": "intent",
       "custody": {
@@ -145,10 +193,24 @@
             "intent_id": "intent:change_01M7P3DSBYV52HDJSBGD87Q5QK",
             "kind": "refined",
             "sequence": 3
+          },
+          {
+            "detail": "{\"instruction_revision\":\"sha256:8477169f220239916078632d50a914f937712fbbbe280a239ce7bcf57fcff16b\",\"revision_id\":\"cross-phase-provider-conflict\",\"source_confidence\":\"provider_observed_record\"}",
+            "event_id": "event:4",
+            "intent_id": "intent:change_01M7P3DSBYV52HDJSBGD87Q5QK",
+            "kind": "instruction_recorded",
+            "sequence": 4
+          },
+          {
+            "detail": "{\"instruction_revision\":\"sha256:ee3d78823c1c7d0f8a1f786cbd46d045d7d0bd6201efb1d2f7b29c037a1637e4\",\"revision_id\":\"cross-phase-origin-precedence\",\"source_confidence\":\"agent_reported\"}",
+            "event_id": "event:5",
+            "intent_id": "intent:change_01M7P3DSBYV52HDJSBGD87Q5QK",
+            "kind": "instruction_recorded",
+            "sequence": 5
           }
         ],
         "knowledge_candidates": [],
-        "next_sequence": 3,
+        "next_sequence": 5,
         "schema_version": "1.1.0",
         "trajectories": {}
       },
