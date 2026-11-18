@@ -114,6 +114,11 @@
       "id": "retain-canonical-policy-race-refusal-and-restoration",
       "summary": "Scripted lineage fixture; these records do not grant human consent or publication readiness",
       "input_digest": "sha256:83ad537a56a97ac87c926b70c5d986fa278814deedf9e5466b361e2d49ac2544"
+    },
+    {
+      "id": "retain-current-candidate-runtime-and-release-surfaces",
+      "summary": "Scripted lineage fixture; these records do not grant human consent or publication readiness",
+      "input_digest": "sha256:d34aa97122a8911c64e2c75e77e6a39c68c388952ef944e630dda2aa21979743"
     }
   ],
   "intents": {
@@ -200,21 +205,21 @@
         {
           "disposition": "updated",
           "path": ".decapod/managed/specs/ARCHITECTURE.md",
-          "reason": "Actual canonical-policy movement after successful native commands must revoke prior proof; preserve denial and require fresh proof after restoration",
+          "reason": "Current measured candidate and real required negative/repair execution; preserve provenance, earlier failures and no human/merge grant",
           "reviewed_code_fingerprint": "bc45054e56b20fedb9dd1cce8dbc4f2ea082adc9d748883372256a90c864940e",
           "spec_material_hash": "51a26b2089d2feaa71668df4c9013ffe8aaf93b34aa8164011e75a56d5b2d020"
         },
         {
           "disposition": "updated",
           "path": ".decapod/managed/specs/INTERFACES.md",
-          "reason": "Actual canonical-policy movement after successful native commands must revoke prior proof; preserve denial and require fresh proof after restoration",
+          "reason": "Current measured candidate and real required negative/repair execution; preserve provenance, earlier failures and no human/merge grant",
           "reviewed_code_fingerprint": "bc45054e56b20fedb9dd1cce8dbc4f2ea082adc9d748883372256a90c864940e",
-          "spec_material_hash": "b996e9b84f87bf9af45d4a49033b9047e2a0893ee558c5e3fd56686e47c709e0"
+          "spec_material_hash": "5a6b013dd7c203236572be698ee7e9d41d5b7fae65455e605e8308ad3a4abbd3"
         },
         {
           "disposition": "updated",
           "path": ".decapod/managed/specs/SECURITY.md",
-          "reason": "Actual canonical-policy movement after successful native commands must revoke prior proof; preserve denial and require fresh proof after restoration",
+          "reason": "Current measured candidate and real required negative/repair execution; preserve provenance, earlier failures and no human/merge grant",
           "reviewed_code_fingerprint": "bc45054e56b20fedb9dd1cce8dbc4f2ea082adc9d748883372256a90c864940e",
           "spec_material_hash": "9bad2facc72710a48be9298757f1a9303f187c427d010cfd0ed0d01c9f4c88be"
         }
@@ -227,7 +232,7 @@
       ],
       "unknowns": [],
       "unresolved_contradictions": [],
-      "updated_at": "1794987914Z"
+      "updated_at": "1794989297Z"
     },
     "trajectory": {
       "active_boundaries": [
