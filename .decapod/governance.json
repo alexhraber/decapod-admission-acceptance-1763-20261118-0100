@@ -99,6 +99,11 @@
       "id": "retain-old-pass-replay-after-actual-failed-rerun",
       "summary": "Scripted lineage fixture; these records do not grant human consent or publication readiness",
       "input_digest": "sha256:0892ef263d02448d4078e4fc694ce8eb1e2e56edfdc3603eff592c1bf1b639a2"
+    },
+    {
+      "id": "repair-actual-source-after-counterfeit-and-external-controls",
+      "summary": "Scripted lineage fixture; these records do not grant human consent or publication readiness",
+      "input_digest": "sha256:6f7c104a5a166e6cc9ad37545b1d3bdf43b18de087e7dcf23f8a78bfd534e77a"
     }
   ],
   "intents": {
@@ -186,21 +191,21 @@
           "disposition": "updated",
           "path": ".decapod/managed/specs/ARCHITECTURE.md",
           "reason": "Preserve actual adversarial failures and trust boundaries; require new exact-candidate proof",
-          "reviewed_code_fingerprint": "d1214cdb1845d1725ef6a3a12fb491afb5bbd000b56c3519da6ad40e8abef057",
+          "reviewed_code_fingerprint": "bc45054e56b20fedb9dd1cce8dbc4f2ea082adc9d748883372256a90c864940e",
           "spec_material_hash": "51a26b2089d2feaa71668df4c9013ffe8aaf93b34aa8164011e75a56d5b2d020"
         },
         {
           "disposition": "updated",
           "path": ".decapod/managed/specs/INTERFACES.md",
           "reason": "Preserve actual adversarial failures and trust boundaries; require new exact-candidate proof",
-          "reviewed_code_fingerprint": "d1214cdb1845d1725ef6a3a12fb491afb5bbd000b56c3519da6ad40e8abef057",
+          "reviewed_code_fingerprint": "bc45054e56b20fedb9dd1cce8dbc4f2ea082adc9d748883372256a90c864940e",
           "spec_material_hash": "b996e9b84f87bf9af45d4a49033b9047e2a0893ee558c5e3fd56686e47c709e0"
         },
         {
           "disposition": "updated",
           "path": ".decapod/managed/specs/SECURITY.md",
           "reason": "Preserve actual adversarial failures and trust boundaries; require new exact-candidate proof",
-          "reviewed_code_fingerprint": "d1214cdb1845d1725ef6a3a12fb491afb5bbd000b56c3519da6ad40e8abef057",
+          "reviewed_code_fingerprint": "bc45054e56b20fedb9dd1cce8dbc4f2ea082adc9d748883372256a90c864940e",
           "spec_material_hash": "9bad2facc72710a48be9298757f1a9303f187c427d010cfd0ed0d01c9f4c88be"
         }
       ],
@@ -212,7 +217,7 @@
       ],
       "unknowns": [],
       "unresolved_contradictions": [],
-      "updated_at": "1794986280Z"
+      "updated_at": "1794986618Z"
     },
     "trajectory": {
       "active_boundaries": [
