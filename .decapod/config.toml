@@ -25,6 +25,13 @@ specs = true
 validation_buildkite_preflights = false
 
 [[proof.commands]]
+name = "audit-contract"
+command = "/usr/bin/python3.13"
+args = ["-I", "-S", "-B", "scripts/check_audit.py"]
+description = "Independently accepted privileged-write audit criterion"
+required = true
+
+[[proof.commands]]
 name = "guard-contract"
 command = "/usr/bin/grep"
 args = ["-F", "-x", "--", "required", "src/guard.txt"]
@@ -40,7 +47,7 @@ required = true
 
 [proof.required_profile]
 id = "repo.pr-readiness.v1"
-reviewed_sources_digest = "sha256:a66fd5dd977abaa543a4de343f695eee0842da5a8f2a939dccff7b1554500580"
+reviewed_sources_digest = "sha256:b25a716119c5b5de101f6b6bf32a4402ec1116c7cf89b783675a3e88f86f6cd5"
 
 [proof.observed_path]
 schema_version = "1.0.0"
@@ -49,7 +56,7 @@ required = true
 
 [proof.repository_contract]
 canonical_local_target = false
-reviewed_commands_digest = "sha256:bbb07d203ead574adc665ea3559260d9afad139d93bd8986598ac01c24536f71"
+reviewed_commands_digest = "sha256:fd4004c307c56e5b1c65960ac4eef2464c40b8558f321d88241b95773f0b3850"
 source_coverage = []
 
 [proof.repository_contract.executions.guard-contract]
@@ -84,3 +91,34 @@ product_type = "service_or_library"
 
 [tracker]
 provider = "decapod"
+
+[proof.repository_contract.executions.audit-contract]
+program = "/usr/bin/python3.13"
+directory = "."
+timeout_seconds = 10
+[proof.repository_contract.executions.audit-contract.toolchain_files]
+python-runtime-0 = "/usr/lib/python3.13/os.py"
+python-runtime-1 = "/usr/lib/python3.13/encodings/__init__.py"
+python-runtime-2 = "/usr/lib/python3.13/encodings/utf_8.py"
+
+[proof.repository_contract.executions.audit-contract.environment]
+LC_ALL = "C"
+
+[proof.selected_work]
+schema_version = "1.0.0"
+id = "actual-selected-audit"
+intent_id = "intent:change_01M7P3DSBYV52HDJSBGD87Q5QK"
+instruction_revision = "sha256:ee3d78823c1c7d0f8a1f786cbd46d045d7d0bd6201efb1d2f7b29c037a1637e4"
+relations = []
+
+[[proof.selected_work.roots]]
+id = "R1-API"
+checks = ["guard-contract"]
+
+[[proof.selected_work.roots]]
+id = "R2-UI"
+checks = ["payload-contract"]
+
+[[proof.selected_work.roots]]
+id = "R3-AUDIT"
+checks = ["audit-contract"]
