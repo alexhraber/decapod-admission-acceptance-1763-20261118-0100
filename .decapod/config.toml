@@ -123,8 +123,15 @@ id = "R3-AUDIT"
 checks = ["audit-contract"]
 
 [[proof.selected_work.relations]]
-id = "REL-AC"
-requirement = "R3-AUDIT"
+id = "REL-AB"
+requirement = "R1-API"
 left = "A"
+right = "B"
+kind = "eq"
+
+[[proof.selected_work.relations]]
+id = "REL-BC"
+requirement = "R2-UI"
+left = "B"
 right = "C"
-kind = "ne"
+kind = "eq"
