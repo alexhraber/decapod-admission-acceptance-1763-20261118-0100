@@ -164,6 +164,11 @@
       "id": "retain-authorized-consistent-revision-and-current-plan",
       "summary": "Scripted lineage fixture; these records do not grant human consent or publication readiness",
       "input_digest": "sha256:928cfe99d2642ca9c3884b7a755bbdf0c99ed8eedacc99de7029191cb58e7a41"
+    },
+    {
+      "id": "retain-exact-38b-candidate-runtime-measurement",
+      "summary": "Scripted lineage fixture; these records do not grant human consent or publication readiness",
+      "input_digest": "sha256:d624db720a924d346d88a738e015f13545cb46ffca8a7a71a21fe3cdb8658da6"
     }
   ],
   "intents": {
@@ -250,21 +255,21 @@
         {
           "disposition": "updated",
           "path": ".decapod/managed/specs/ARCHITECTURE.md",
-          "reason": "All roots remain mapped; accepted equality/inequality conflict is distinct from actual audit behavior. Preserve the conflict, rejected unilateral rewrite, explicit accepted revision and fresh required proof",
+          "reason": "Current measured candidate and real required negative/repair execution; preserve provenance, earlier failures and no human/merge grant",
           "reviewed_code_fingerprint": "d3818fba7b861f1c6eea4c200d11b147dd722fa11b2ef49f1e1aea8edcbf0ae0",
           "spec_material_hash": "51a26b2089d2feaa71668df4c9013ffe8aaf93b34aa8164011e75a56d5b2d020"
         },
         {
           "disposition": "updated",
           "path": ".decapod/managed/specs/INTERFACES.md",
-          "reason": "All roots remain mapped; accepted equality/inequality conflict is distinct from actual audit behavior. Preserve the conflict, rejected unilateral rewrite, explicit accepted revision and fresh required proof",
+          "reason": "Current measured candidate and real required negative/repair execution; preserve provenance, earlier failures and no human/merge grant",
           "reviewed_code_fingerprint": "d3818fba7b861f1c6eea4c200d11b147dd722fa11b2ef49f1e1aea8edcbf0ae0",
-          "spec_material_hash": "fae111d89f42778ce6f6fb13097c893e14bb9f99f49459372e9dbf0d8447ca71"
+          "spec_material_hash": "4e5244321086ae8d3f0d49b5a88e8b47da2646f7fe75fcf7ffb6518a854cacc2"
         },
         {
           "disposition": "updated",
           "path": ".decapod/managed/specs/SECURITY.md",
-          "reason": "All roots remain mapped; accepted equality/inequality conflict is distinct from actual audit behavior. Preserve the conflict, rejected unilateral rewrite, explicit accepted revision and fresh required proof",
+          "reason": "Current measured candidate and real required negative/repair execution; preserve provenance, earlier failures and no human/merge grant",
           "reviewed_code_fingerprint": "d3818fba7b861f1c6eea4c200d11b147dd722fa11b2ef49f1e1aea8edcbf0ae0",
           "spec_material_hash": "9bad2facc72710a48be9298757f1a9303f187c427d010cfd0ed0d01c9f4c88be"
         }
@@ -277,7 +282,7 @@
       ],
       "unknowns": [],
       "unresolved_contradictions": [],
-      "updated_at": "1794998154Z"
+      "updated_at": "1795001336Z"
     },
     "trajectory": {
       "active_boundaries": [
